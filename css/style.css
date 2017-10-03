@@ -7,7 +7,7 @@ ul li {
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
-    color: #00ad56;
+    color: #008f4a;
     font-weight: 600;
     font-size: 19px;
     font-family: 'Gloria Hallelujah', cursive;
@@ -22,7 +22,13 @@ ul li {
     background: none;
 }
 
-.navbar-default{
-    background-color: #dcdcdc;
-    border:none;
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+
+div.container-fluid-center {
+    display: table;
+    margin: 0 auto;
 }

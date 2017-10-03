@@ -13,7 +13,7 @@ function makeLink($link)
 
 ?>
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container-fluid-center">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.php">Ihrisko II</a>
         </div>
