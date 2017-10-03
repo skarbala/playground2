@@ -26,6 +26,9 @@
     .error {
         border: 2px solid #be2d2b;;
     }
+    div.current-wait-time{
+        margin-top: 50px;
+    }
 </style>
 </body>
 <div class="container">
