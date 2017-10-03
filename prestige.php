@@ -11,7 +11,7 @@
         background-color: #0f1225;
     }
 
-    h1, h2 {
+    h1, h2, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
         font-family: 'Cinzel', serif;
         color: #404272;
     }
@@ -21,6 +21,16 @@
         font-size: 70px;
         font-weight: 600;
     }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #6769aa;
+        background: none;
+    }
+
 </style>
 </body>
 <div class="container">
