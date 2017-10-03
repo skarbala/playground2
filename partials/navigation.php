@@ -1,6 +1,6 @@
 <?php
 $navigation = [
-    "click me baby",
+    "wait",
     ];
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");
 
@@ -13,7 +13,7 @@ function makeLink($link)
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php">Ihrisko</a>
+            <a class="navbar-brand" href="index.php">Ihrisko II</a>
         </div>
         <ul class="nav navbar-nav">
             <?php foreach ($navigation as $navigationItem) {
