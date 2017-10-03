@@ -19,7 +19,8 @@
     }
 
     img {
-        width: 50px;
+        width: 70px;
+        margin:20px;
     }
 
     ul.minions li {
@@ -31,11 +32,11 @@
 <div class="container">
     <div class="text-center">
         <h1>Minion time</h1>
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-2">
             <input type="number" class="form-control">
             <button class="btn btn-warning btn-block">Get them</button>
         </div>
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-2">
             <ul class="minions">
             </ul>
         </div>
