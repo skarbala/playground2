@@ -10,6 +10,7 @@ ul li {
     color: #00ad56;
     font-weight: 600;
     font-size: 19px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -19,4 +20,9 @@ ul li {
 .navbar-default .navbar-nav > li > a:hover {
     color: #be2d2b;
     background: none;
+}
+
+.navbar-default{
+    background-color: #dcdcdc;
+    border:none;
 }

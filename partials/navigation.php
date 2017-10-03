@@ -1,6 +1,7 @@
 <?php
 $navigation = [
     "wait",
+    "wait for page",
     ];
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");
 
