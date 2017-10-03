@@ -31,16 +31,27 @@
         background: none;
     }
 
+    img {
+        margin-top: 30px;
+    }
 </style>
 </body>
 <div class="container">
     <div class="text-center">
         <h1>Prestige</h1>
         <h2>Are you watching closely?</h2>
+        <div class="hat">
+            <img src="assets/img/hat.png" alt="">
+        </div>
     </div>
-
 </div>
 <script>
-
+    $('img').click(function () {
+        $(this).fadeOut(100);
+        $(this).delay(2500).fadeIn(100);
+//        setTimeout(function () {
+//            $('.hat').append('<img src="assets/img/hat.png" alt="">');
+//        }, 2500);
+    })
 </script>
 </html>
