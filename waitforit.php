@@ -86,6 +86,7 @@
     });
 
     $('#startWaitForProperty').click(function () {
+        $('#waitForProperty').removeClass('error');
         setTimeout(function () {
             $('#waitForProperty').addClass('error');
         }, getRandomResponseTime());
