@@ -5,15 +5,16 @@
 <?php include 'partials/head.php'; ?>
 <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
 <style>
-    body{
+    body {
         background-color: #f0f0f0;
     }
+
     img {
         height: 500px;
     }
-    button{
-        font-family: 'Stalinist One', cursive;
 
+    button {
+        font-family: 'Stalinist One', cursive;
     }
 
     .prime-form {
