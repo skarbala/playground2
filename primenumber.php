@@ -5,14 +5,19 @@
 <?php include 'partials/head.php'; ?>
 <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
 <style>
+
+    img{
+        height: 500px;
+    }
     .prime-form {
-        margin-top: 150px;
+        margin-top:150px;
+        margin-bottom:50px;
     }
 
     h1 {
         font-family: 'Stalinist One', cursive;
         font-size: 50px;
-        color: #11106a;
+        color: #2d63c5;
     }
 
     div.result {
@@ -26,7 +31,7 @@
     }
 
     div.success {
-        color: #11106a;
+        color: #2d63c5;
     }
 
     input.form-control, button.btn {
@@ -39,9 +44,9 @@
 <h1 class="text-center">Optimus Prime</h1>
 <div class="container">
     <div class="col-md-6 col-md-offset-1">
-        <div class="prime-form">
+        <div class="prime-form col-md-6 col-md-offset-3">
             <input type="number" class="form-control">
-            <button class="btn btn-block">Is it prime?</button>
+            <button class="btn btn-default btn-block">Is it prime?</button>
         </div>
         <div class="result text-center"></div>
     </div>
@@ -54,7 +59,7 @@
     $('button').click(function () {
         var result = $("div.result");
 
-        result.text('');
+        result.text('').removeClass("error success");
         var input = $('input');
         setTimeout(function () {
             if (input.val()) {
@@ -63,8 +68,10 @@
                 } else {
                     result.text("Optimus is sad").addClass("error");
                 }
+            }else{
+                result.text("Optimus is confused");
             }
-        }, 1000);
+        }, 500);
 
 
     });
