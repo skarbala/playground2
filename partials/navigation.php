@@ -4,7 +4,7 @@ $navigation = [
     "minions",
     "prestige",
     "tabulka",
-    ];
+];
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");
 
 function makeLink($link)

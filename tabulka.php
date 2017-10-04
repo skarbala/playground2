@@ -1,7 +1,7 @@
 <?php
 $rows = rand(50, 100);
 $names = ["Giovanni", "Florian", "Nathanuel", "Vendelin", "Bendegúz", "Enrigue", "Zalán", "Alfonz", "Nimród", "Jean-Pierre", "Migel"];
-$surnames = ["Premrdal", "Toth", "Herák", "Bihary", "Vyhonský", "Šuška", "Adamec", "Obsust", "Plesivec", "Fekete", "Kundaker", "Holochuj"];
+$surnames = ["Premrdal", "Toth", "Herák", "Bihary", "Vyhonský", "Adamec", "Obsust", "Plesivec", "Fekete", "Kundaker", "Holochuj"];
 
 function getEmailAddress($name, $surname)
 {
