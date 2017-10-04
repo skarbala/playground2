@@ -5,13 +5,20 @@
 <?php include 'partials/head.php'; ?>
 <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
 <style>
-
-    img{
+    body{
+        background-color: #f0f0f0;
+    }
+    img {
         height: 500px;
     }
+    button{
+        font-family: 'Stalinist One', cursive;
+
+    }
+
     .prime-form {
-        margin-top:150px;
-        margin-bottom:50px;
+        margin-top: 150px;
+        margin-bottom: 50px;
     }
 
     h1 {
@@ -41,12 +48,12 @@
 <body>
 <?php include 'partials/navigation.php' ?>
 </body>
-<h1 class="text-center">Optimus Prime</h1>
 <div class="container">
+    <h1 class="text-center">Optimus Prime</h1>
     <div class="col-md-6 col-md-offset-1">
         <div class="prime-form col-md-6 col-md-offset-3">
             <input type="number" class="form-control">
-            <button class="btn btn-default btn-block">Is it prime?</button>
+            <button class="btn btn-default btn-block btn-danger">Is it prime?</button>
         </div>
         <div class="result text-center"></div>
     </div>
@@ -68,7 +75,7 @@
                 } else {
                     result.text("Optimus is sad").addClass("error");
                 }
-            }else{
+            } else {
                 result.text("Optimus is confused");
             }
         }, 500);
