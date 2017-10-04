@@ -7,10 +7,11 @@
 <body>
 <?php include 'partials/navigation.php' ?>
 <style>
-    body{
-        background: url("assets/img/minions_background.jpg")  no-repeat center center fixed;
+    body {
+        background: url("assets/img/minions_background.jpg") no-repeat center center fixed;
         background-size: cover;
     }
+
     h1 {
         font-family: 'Secular One', sans-serif;
         font-size: 70px;
@@ -19,14 +20,17 @@
         text-shadow: 2px 2px #ec971f;
     }
 
-    button.btn-warning{
+    button.btn-warning {
         background-color: #ffc832;
-        border:none;
+        border: none;
+        border-radius: 0;
+        color: #825312;
+    }
+
+    input.form-control {
         border-radius: 0;
     }
-    input.form-control{
-        border-radius: 0;
-    }
+
     div.minions {
         list-style: none;
     }
@@ -44,7 +48,7 @@
         <h1>minion time</h1>
         <div class="col-md-6 col-md-offset-3">
             <input type="number" class="form-control">
-            <button class="btn btn-warning btn-block">Get them</button>
+            <button class="btn btn-warning btn-block">Give me minions!</button>
         </div>
         <div class="col-md-10 col-md-offset-1">
             <div class="minions">
@@ -59,9 +63,9 @@
             setTimeout(function () {
                 addMinion($('.minions'));
             }, 300 * i);
-
         }
     });
+
     function addMinion(element) {
         element.append('<li><img src="assets/img/minions/' + getRandomMinionImage() + '" alt=""></li>');
     }

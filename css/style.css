@@ -32,3 +32,6 @@ div.container-fluid-center {
     display: table;
     margin: 0 auto;
 }
+div.container{
+    margin-top: 30px;
+}
