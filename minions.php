@@ -85,7 +85,7 @@
     }
 
     function getRandomMinionImage() {
-        var number = Math.round(Math.random() * (5 - 1) + 1);
+        var number = Math.round(Math.random() * (9 - 1) + 1);
         return number + ".png"
     }
 </script>
