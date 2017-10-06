@@ -51,7 +51,10 @@
         font-family: inception, serif;
         font-size: 20px;
         background-color: #be2d2b;
+    }
 
+    .btn:active:focus, .btn:focus{
+        outline: none;
     }
 
     div.content {
@@ -74,9 +77,12 @@
 </body>
 <script>
     $("#letsGoDeeper").click(function () {
+        $("#letsGoDeeper").addClass("disabled");
         setTimeout(function () {
             window.open("http://localhost/inception2.php", "Kokotina", "width=1200,height=900");
+            $("#letsGoDeeper").removeClass("disabled");
         }, 1500);
+
     });
 
 
