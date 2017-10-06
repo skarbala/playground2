@@ -26,6 +26,20 @@ function getRandomSurname()
 <?php include 'partials/head.php'; ?>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
 <style>
+
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+        font-family: Montserrat, serif;
+        color: #ed69ff;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #9e47a8;
+        background: none;
+    }
     body {
         background-color: #352f33;
     }
