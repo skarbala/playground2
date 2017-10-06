@@ -50,13 +50,14 @@
         text-transform: uppercase;
         font-family: inception, serif;
         font-size: 20px;
-
+        background-color: #be2d2b;
 
     }
-    div.content{
+
+    div.content {
         position: absolute;
-        bottom:150px;
-        right:250px;
+        bottom: 150px;
+        right: 250px;
     }
 
 
