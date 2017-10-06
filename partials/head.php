@@ -7,5 +7,4 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link rel="icon" href="assets/img/batman.ico">
-
 </head>

@@ -73,10 +73,12 @@
     </div>
 </body>
 <script>
-
     $("#letsGoDeeper").click(function () {
-        window.open("http://localhost/inception2.php", "Kokotina", "width=1200,height=900");
+        setTimeout(function () {
+            window.open("http://localhost/inception2.php", "Kokotina", "width=1200,height=900");
+        }, 1500);
+    });
 
-    })
+
 </script>
 </html>
