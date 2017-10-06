@@ -4,7 +4,8 @@ $navigation = [
     "minions",
     "prestige",
     "tabulka",
-    "prime number"
+    "prime number",
+    "inception",
 ];
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");
 

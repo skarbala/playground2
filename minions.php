@@ -12,6 +12,20 @@
         background-size: cover;
     }
 
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+        font-family: 'Secular One', sans-serif;
+        color: #ffc832;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #c07b1a;
+        background: none;
+    }
+
     h1 {
         font-family: 'Secular One', sans-serif;
         font-size: 70px;
