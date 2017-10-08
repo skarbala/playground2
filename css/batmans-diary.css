@@ -1,0 +1,19 @@
+ul{
+	list-style: none;
+	padding: 0;
+}
+li.sin{
+	margin:0;
+	float:none;
+	padding: 5px 20px;
+	border: 1px solid black;
+	border-bottom: 0;
+}
+li.sin:last-child{
+	border-bottom:  1px solid black;
+}
+
+li.sin a{
+	float:right;
+
+}
