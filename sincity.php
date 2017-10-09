@@ -1,5 +1,4 @@
 <?php
-
 require_once '_inc/sin-city/functions.php';
 $data = load_data();
 ?>
@@ -22,10 +21,10 @@ $data = load_data();
         <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
         <?php if (!empty($data)) : ?>
             <ul class="list-of-sins">
-                <?php foreach ($data as $mesidz): ?>
+                <?php foreach ($data as $message): ?>
                     <li class="sin">
-                        <?php echo $mesidz->title ?>
-                        <a data="<?php echo $mesidz->id ?>" href="">detail</a>
+                        <?php echo $message->title ?>
+                        <a data="<?php echo $message->id ?>" href="">detail</a>
                     </li>
                 <?php endforeach ?>
             </ul>
