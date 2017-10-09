@@ -79,7 +79,7 @@
     $("#letsGoDeeper").click(function () {
         $("#letsGoDeeper").addClass("disabled");
         setTimeout(function () {
-            window.open("http://localhost/inception2.php", "Kokotina", "width=1200,height=900");
+            window.open("http://localhost/inception2.php", "", "width=1200,height=900");
             $("#letsGoDeeper").removeClass("disabled");
         }, 1500);
     });

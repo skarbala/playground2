@@ -6,7 +6,7 @@ $navigation = [
     "tabulka",
     "prime number",
     "inception",
-    "batmans diary"
+    "sin city"
 ];
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");
 
