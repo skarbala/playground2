@@ -1,10 +1,1 @@
-[
-  {
-    "id": 1,
-    "message": "text",
-    "title": "aaaa",
-    "author": "sinner",
-    "deleted": false,
-    "creation_date": "10.09.17"
-  }
-]
+[{"id":1,"message":"text","title":"aaaa","author":"sinner","deleted":false,"creation_date":"10.09.17"},{"id":2,"message":"lopatou som ho zabil","title":"zabil som pavuk","author":"satan","deleted":false,"creation_date":"10.09.17"}]

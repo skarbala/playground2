@@ -12,17 +12,13 @@ $data = load_data();
 </script>
 <body>
 <?php include 'partials/navigation.php' ?>
+
 <div class="container">
     <h1 class="text-center">sin city</h1>
     <div class="col-md-6">
         <h3>new sin</h3>
-        <form action="_inc/sin-city/add-new.php" class="form-group" method="POST">
-            <input type="text" name="title" class="form-control" placeholder="title">
-            <input type="text" name="author" class="form-control" placeholder="sinner">
-            <textarea name="message" id="" cols="10" rows="5" placeholder="what have you done?"
-                      class="form-control"></textarea>
-            <button type="submit" class="btn btn-block">confess</button>
-        </form>
+        <?php require_once "partials/sin-city/add-new.form.php" ?>
+
         <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
         <?php if (!empty($data)) : ?>
             <ul class="list-of-sins">
@@ -35,6 +31,7 @@ $data = load_data();
             </ul>
         <?php endif ?>
     </div>
+
     <div class="col-md-5 col-md-offset-1 detail">
         <h3>detail of sin</h3>
         <article>
@@ -44,13 +41,13 @@ $data = load_data();
             <p></p>
             <h5></h5>
         </article>
-
     </div>
+
     <img src="assets/img/sincity.jpg" alt="" class="sinbadge">
 </div>
 </body>
 <script>
-    var detail = $('.detail');
+    var detail = $('div.detail article');
     $("li.sin").click(function (event) {
         event.preventDefault();
         var key = $(this).find('a').attr("data");
@@ -62,7 +59,7 @@ $data = load_data();
         })
             .done(function (data) {
                 detail.fadeIn(300);
-                detail.find('h4').text(data.author+" : "+data.title);
+                detail.find('h4').text(data.author + " : " + data.title);
                 detail.find('p').text(data.message);
                 detail.find('h4').append("<span>" + data.creation_date + "</span>");
 

@@ -84,7 +84,7 @@ div.detail h4 span {
     float: right;
 }
 
-div.detail {
+div.detail article{
     display: none;
 }
 
