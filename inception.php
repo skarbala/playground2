@@ -53,7 +53,7 @@
         background-color: #be2d2b;
     }
 
-    .btn:active:focus, .btn:focus{
+    .btn:active:focus, .btn:focus {
         outline: none;
     }
 
@@ -82,9 +82,6 @@
             window.open("http://localhost/inception2.php", "Kokotina", "width=1200,height=900");
             $("#letsGoDeeper").removeClass("disabled");
         }, 1500);
-
     });
-
-
 </script>
 </html>
