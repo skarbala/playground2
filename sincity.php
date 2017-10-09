@@ -38,7 +38,10 @@ $data = load_data();
                 <datetime></datetime>
             </h4>
             <p></p>
-            <h5></h5>
+            <div class="tags">
+            <h5>tags</h5>
+                <ul></ul>
+            </div>
         </article>
     </div>
 
@@ -61,6 +64,10 @@ $data = load_data();
                 detail.find('h4').text(data.author + " : " + data.title);
                 detail.find('p').text(data.message);
                 detail.find('h4').append("<span>" + data.creation_date + "</span>");
+                var tags = detail.find('ul').html('');
+                data.tags.forEach( function(element, index) {
+                   tags.append('<li>'+element+ '</li>');
+                });
 
             })
             .fail(function (msg) {
