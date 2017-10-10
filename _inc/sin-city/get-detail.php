@@ -1,5 +1,5 @@
 <?php
-require_once 'functions.php';
+require_once '../functions.php';
 $searched_id = $_GET['key'];
 
 $data = load_data();

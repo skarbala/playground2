@@ -1,5 +1,5 @@
 <?php
-require_once 'functions.php';
+require_once '../functions.php';
 $data = load_data();
 echo '<pre>';
 print_r($_POST);

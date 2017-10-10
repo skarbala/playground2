@@ -1,5 +1,5 @@
 <?php
-require_once '_inc/sin-city/functions.php';
+require_once '_inc/functions.php';
 $data = load_data();
 ?>
 <!doctype html>

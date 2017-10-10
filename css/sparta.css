@@ -1,0 +1,82 @@
+@font-face {
+    font-family: '300';
+    src: url("../assets/fonts/adam.ttf");
+}
+
+h1 {
+    font-family: '300', "sans-serif";
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h1, h2 {
+    color: #be2d2b;
+}
+
+h2 {
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    background: url("../assets/img/300.jpg") repeat-y fixed center;
+    background-size: cover;
+
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+    font-family: '300', sans-serif;
+    color: #be2d2b;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #751f1e;
+    background: none;
+}
+
+article.sin {
+    background-color: #bfbfbf;
+    padding: 10px 15px;
+    margin: 10px auto;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+article.sin p {
+    margin: 20px auto;
+}
+
+article.sin footer {
+    border-top: 1px solid #a8a8a8;
+}
+
+article.sin span {
+    float: right;
+}
+
+article.sin button.btn {
+    float: right;
+    border-radius: 0;
+}
+
+article.sin footer {
+    padding: 10px 0 0 0;
+}
+
+article.sin footer h5 {
+    display: inline-block;
+}
+
+article.sin:hover {
+    transform: scale(1.02s);
+}
