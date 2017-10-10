@@ -16,13 +16,9 @@
         font-weight: 600;
         color: #be2d2b;
         text-shadow: 2px 2px #9c2424;
-    }
-
-
-    h1{
         font-family: 'Gloria Hallelujah', cursive;
     }
-
+    
     .current-wait-time p {
         font-size: 30px;
         font-weight: 600;
