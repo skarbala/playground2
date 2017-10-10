@@ -31,51 +31,10 @@ $data = load_data();
         <?php endif ?>
     </div>
 
-    <div class="col-md-5 col-md-offset-1 detail">
-        <h3>detail of sin</h3>
-        <article>
-            <h4>
-                <datetime></datetime>
-            </h4>
-            <p></p>
-            <div class="tags">
-            <h5>tags</h5>
-                <ul></ul>
-            </div>
-        </article>
-    </div>
+    <?php include 'partials/sin-city/detail.php' ?>
 
     <img src="assets/img/sincity.jpg" alt="" class="sinbadge">
 </div>
 </body>
-<script>
-    var detail = $('div.detail article');
-    $("li.sin").click(function (event) {
-        event.preventDefault();
-        var key = $(this).find('a').attr("data");
-
-        $.ajax({
-            url: baseURL + 'get-detail.php',
-            data: {key: key},
-            dataType: "json"
-        })
-            .done(function (data) {
-                detail.fadeIn(300);
-                detail.find('h4').text(data.author + " : " + data.title);
-                detail.find('p').text(data.message);
-                detail.find('h4').append("<span>" + data.creation_date + "</span>");
-                var tags = detail.find('ul').html('');
-                data.tags.forEach( function(element, index) {
-                   tags.append('<li>'+element+ '</li>');
-                });
-
-            })
-            .fail(function (msg) {
-            })
-            .always(function () {
-            });
-
-    });
-
-</script>
+<script src="js/sin-city.js" type="text/javascript"></script>
 </html>
