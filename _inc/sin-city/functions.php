@@ -13,6 +13,3 @@ function save_file($data)
     global $file_path;
     file_put_contents($file_path, json_encode($data));
 }
-
-
-?>
