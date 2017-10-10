@@ -18,11 +18,8 @@
         text-shadow: 2px 2px #9c2424;
     }
 
-    h2 {
-        color: #008f4a;
-    }
 
-    h1, h2 {
+    h1{
         font-family: 'Gloria Hallelujah', cursive;
     }
 
@@ -55,22 +52,22 @@
     </div>
     <div class="col-sm-6 col-sm-offset-3">
         <div class="row">
-            <h2>Wait for text</h2>
+            <h2>Its gonna be legen...</h2>
             <div class="input-group">
-                <input type="text" class="form-control" id="waitForTextInput" placeholder="Your text will appear here">
                 <span class="input-group-btn">
-                <button class="btn-success btn" type="button" id="startWaitForText">Get the text</button>
+                <button class="btn-primary btn" type="button" id="startWaitForText">wait for it</button>
             </span>
+                <input type="text" class="form-control" id="waitForTextInput" placeholder="Your text will appear here">
             </div>
         </div>
         <div class="row">
             <h2>Wait for class</h2>
             <div class="input-group">
+                <span class="input-group-btn">
+                <button class="btn-primary btn" type="button" id="startWaitForProperty">Get the property</button>
+            </span>
                 <input type="text" class="form-control" id="waitForProperty"
                        placeholder="This input will get a class">
-                <span class="input-group-btn">
-                <button class="btn-success btn" type="button" id="startWaitForProperty">Get the property</button>
-            </span>
             </div>
         </div>
 
@@ -80,7 +77,7 @@
 <script>
     $('#startWaitForText').click(function () {
         setTimeout(function () {
-            $('#waitForTextInput').val("I am your father !!!");
+            $('#waitForTextInput').val("dary !!!");
         }, getRandomResponseTime());
 
     });
