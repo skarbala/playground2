@@ -1,9 +1,7 @@
 <?php
 require_once '../functions.php';
 $data = load_data();
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+
 empty($data) ? $id = 0 : $id = (max($data)->id);
 function validate()
 {

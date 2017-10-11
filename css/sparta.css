@@ -21,11 +21,11 @@ h2 {
     font-family: 'Kalam', cursive;
 }
 
-body {
-    background: url("../assets/img/300.jpg") repeat-y fixed center;
-    background-size: cover;
+/*body {*/
+    /*background: url("../assets/img/300.jpg") fixed center;*/
+    /*background-size: cover;*/
 
-}
+/*}*/
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
     font-family: '300', sans-serif;
@@ -77,6 +77,13 @@ article.sin footer h5 {
     display: inline-block;
 }
 
-article.sin:hover {
-    transform: scale(1.02);
+/*article.sin:hover {*/
+    /*transform: scale(1.02);*/
+/*}*/
+.modal-content{
+    border-radius: 0;
+}
+.modal-dialog button.btn-primary{
+    background-color: #D4AF37;
+    border: 0;
 }
