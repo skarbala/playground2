@@ -1,64 +1,14 @@
 [
   {
     "id": 1,
-    "message": "wefrgetgerg",
-    "title": "fwefwef",
-    "author": "wefwef",
-    "deleted": false,
-    "creation_date": "10.09.17",
+    "message": "ergerggrge",
+    "title": "errregerg",
+    "author": "ergerg",
+    "forgiven": true,
+    "creation_date": "10.12.17",
     "tags": [
-      "murder",
-      "blackmail"
-    ]
-  },
-  {
-    "id": 2,
-    "message": "thtrhrthrth",
-    "title": "fwefw",
-    "author": "wergerg",
-    "deleted": false,
-    "creation_date": "10.09.17",
-    "tags": [
-      "robbery"
-    ]
-  },
-  {
-    "id": 3,
-    "message": "thyhhtry",
-    "title": "ergergewr",
-    "author": "wegegerg",
-    "deleted": false,
-    "creation_date": "10.09.17",
-    "tags": [
-      "murder",
-      "hijack",
-      "blackmail",
       "car accident",
       "robbery"
-    ]
-  },
-  {
-    "id": 4,
-    "message": "fwefoiwhefowefhw\r\nwejfwef\r\nwefreighreogewrgwerg",
-    "title": "toto je tajtl",
-    "author": "toto je meno",
-    "deleted": false,
-    "creation_date": "10.09.17",
-    "tags": [
-      "hijack",
-      "car accident",
-      "robbery"
-    ]
-  },
-  {
-    "id": 5,
-    "message": "zabil som ho lopatou!!!",
-    "title": "zabil som pavuka",
-    "author": "satan",
-    "deleted": false,
-    "creation_date": "10.09.17",
-    "tags": [
-      "murder"
     ]
   }
 ]

@@ -46,11 +46,13 @@ $data = load_data();
             dataType: "json"
         })
             .done(function (data) {
+                console.log(data);
                 $('h4.modal-title').text(data.title);
                 $('.modal-body p').text(data.message);
                 $('#confirm').attr('data', data.id);
             })
             .fail(function (msg) {
+                console.log(msg);
             })
             .always(function () {
             });
@@ -60,13 +62,11 @@ $data = load_data();
         $.ajax({
             url: baseURL + 'forgive-sin.php',
             data: {key: key},
-            type: POST,
+            type: 'POST',
             dataType: "json"
         })
             .done(function (data) {
-                $('h4.modal-title').text(data.title);
-                $('.modal-body p').text(data.message);
-                $('#confirm').attr('data', data.id);
+                console.log(data)
             })
             .fail(function (msg) {
             })
