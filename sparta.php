@@ -66,7 +66,8 @@ $data = load_data();
             dataType: "json"
         })
             .done(function (data) {
-                console.log(data)
+                console.log(data);
+                $("#myModal").modal('hide');
             })
             .fail(function (msg) {
             })
