@@ -10,5 +10,18 @@
       "car accident",
       "robbery"
     ]
+  },
+  {
+    "id": 2,
+    "message": "ksdnfwofwefweif i shot the dj",
+    "title": "this is new",
+    "author": "sinnnneeeeer",
+    "forgiven": true,
+    "creation_date": "10.12.17",
+    "tags": [
+      "blackmail",
+      "car accident",
+      "robbery"
+    ]
   }
 ]
