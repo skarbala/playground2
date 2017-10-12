@@ -19,18 +19,20 @@ $data = load_data();
     </div>
     <div class="col-md-8 col-md-offset-2">
         <? foreach ($data as $message): ?>
-            <article class="sin">
-                <header>
-                    <h4><? echo $message->title ?><span><? echo $message->creation_date ?></span></h4>
-                </header>
-                <p><? echo $message->message ?></p>
-                <footer>
-                    <h5><? echo $message->author ?></h5>
-                    <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"
-                            data="<? echo $message->id ?>">forgive
-                    </button>
-                </footer>
-            </article>
+            <?php if (!$message->forgiven): ?>
+                <article class="sin" id="<? echo $message->id ?>">
+                    <header>
+                        <h4><? echo $message->title ?><span><? echo $message->creation_date ?></span></h4>
+                    </header>
+                    <p><? echo $message->message ?></p>
+                    <footer>
+                        <h5><? echo $message->author ?></h5>
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"
+                                data="<? echo $message->id ?>">forgive
+                        </button>
+                    </footer>
+                </article>
+            <? endif; ?>
         <? endforeach ?>
     </div>
 </div>
@@ -57,6 +59,7 @@ $data = load_data();
             .always(function () {
             });
     });
+
     $('#confirm').click(function () {
         var key = $(this).attr('data');
         $.ajax({
@@ -68,6 +71,7 @@ $data = load_data();
             .done(function (data) {
                 console.log(data);
                 $("#myModal").modal('hide');
+                $('article#' + data.id).hide();
             })
             .fail(function (msg) {
             })
