@@ -21,7 +21,7 @@ function fillInDetail(data) {
         data.tags.forEach(function (element) {
             tags.append('<li>' + element + '</li>');
         });
-    }else{
+    } else {
         tags.append('<li>no tags</li>')
     }
 

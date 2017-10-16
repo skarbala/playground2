@@ -24,7 +24,11 @@ $data = load_data();
                 <?php foreach ($data as $message): ?>
                     <li class="sin">
                         <?php echo $message->title ?>
-                        <a data="<?php echo $message->id ?>" href="">detail</a>
+                        <div class="description">
+                            <p class="<?php echo ($message->forgiven) ? "" : "pending" ?>">
+                                <?php echo ($message->forgiven) ? "forgiven" : "pending" ?></p>
+                            <a data="<?php echo $message->id ?>" href="">detail</a>
+                        </div>
                     </li>
                 <?php endforeach ?>
             </ul>

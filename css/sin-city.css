@@ -7,19 +7,19 @@ body {
     background-color: #000000;
 }
 
-.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand {
     font-family: sincity, serif;
     color: #c92100;
     font-size: 15px;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:hover {
     color: #750f00;
     background: none;
 }
@@ -47,9 +47,17 @@ li.sin:last-child {
     border-bottom: 1px solid #414141;
 }
 
-li.sin a {
-    float: right;
+li.sin div.description {
     color: white;
+    float:right;
+    margin:0;
+}
+div.description p{
+    display: inline-block;
+    margin: 0 20px;
+}
+div.description p.pending{
+    color:red;
 }
 
 h1,
@@ -91,8 +99,9 @@ div.tags h5 {
     padding-bottom: 5px;
     border-bottom: 1px solid white;
 }
-div.detail p{
-    margin:20px 0;
+
+div.detail p {
+    margin: 20px 0;
 }
 
 div.tags li {
@@ -110,7 +119,6 @@ div.tags li:nth-child(even) {
 li.sin a:hover {
     text-decoration: none;
 }
-
 
 li.sin:hover {
     background-color: #c92100;
@@ -169,13 +177,14 @@ img.sinbadge {
 label.checkbox-inline {
     color: white;
 }
-.loader{
-    position:absolute;
-    top:100px;
-    right:50%;
-    display:none;
+
+.loader {
+    position: absolute;
+    top: 100px;
+    right: 50%;
+    display: none;
 }
 
-div.detail{
-    position:relative;
+div.detail {
+    position: relative;
 }
