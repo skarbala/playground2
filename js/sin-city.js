@@ -17,9 +17,14 @@ function fillInDetail(data) {
     detail.find('p').text(data.message);
     detail.find('h4').append("<span>" + data.creation_date + "</span>");
     var tags = detail.find('ul').html('');
-    data.tags.forEach(function (element) {
-        tags.append('<li>' + element + '</li>');
-    });
+    if (data.tags) {
+        data.tags.forEach(function (element) {
+            tags.append('<li>' + element + '</li>');
+        });
+    }else{
+        tags.append('<li>no tags</li>')
+    }
+
 }
 function loadDetail(key) {
     $.ajax({
@@ -34,6 +39,7 @@ function loadDetail(key) {
 
         })
         .fail(function (msg) {
+            console.log(msg);
         })
         .always(function () {
         });
