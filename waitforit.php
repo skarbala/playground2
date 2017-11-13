@@ -68,9 +68,9 @@
     </div>
     <div class="row">
       <h2>Blur!</h2>
-      <div class="input-group">
+      <div class="form-group">
         <input type="text" class="form-control" id="waitForBlur"
-               placeholder="This input will get a class">
+               placeholder="This input can be blured">
       </div>
     </div>
 
@@ -96,9 +96,7 @@
         setTimeout(function () {
             $('#waitForBlur').val("blured!");
         }, getRandomResponseTime());
-
     });
-
 
     function getRandomResponseTime() {
         var div = $('.current-wait-time');
