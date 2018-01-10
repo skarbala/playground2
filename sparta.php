@@ -12,29 +12,27 @@ $data = load_data();
 </script>
 <body>
 <?php include 'partials/navigation.php' ?>
-<div class="container">
-    <div class="text-center">
-        <h1>300</h1>
-        <h2>hriechov hrmených</h2>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-        <? foreach ($data as $message): ?>
-            <?php if (!$message->forgiven): ?>
-                <article class="sin" id="<? echo $message->id ?>">
-                    <header>
-                        <h4><? echo $message->title ?><span><? echo $message->creation_date ?></span></h4>
-                    </header>
-                    <p><? echo $message->message ?></p>
-                    <footer>
-                        <h5><? echo $message->author ?></h5>
-                        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"
-                                data="<? echo $message->id ?>">forgive
-                        </button>
-                    </footer>
-                </article>
-            <? endif; ?>
-        <? endforeach ?>
-    </div>
+<div class="text-center">
+  <h1>300</h1>
+  <h2>hriechov hrmených</h2>
+</div>
+<div class="sins col-md-10 col-md-offset-1">
+    <? foreach ($data as $message): ?>
+        <?php if (!$message->forgiven): ?>
+        <article class="sin" id="<? echo $message->id ?>">
+          <header>
+            <h4><? echo $message->title ?><span><? echo $message->creation_date ?></span></h4>
+          </header>
+          <p><? echo $message->message ?></p>
+          <footer>
+            <h5><? echo $message->author ?></h5>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"
+                    data="<? echo $message->id ?>">forgive
+            </button>
+          </footer>
+        </article>
+        <? endif; ?>
+    <? endforeach ?>
 </div>
 <? include_once "partials/sparta/modal.php" ?>
 </body>
