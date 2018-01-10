@@ -18,8 +18,8 @@ $data = load_data();
     <h3>new sin</h3>
       <?php require_once "partials/sin-city/add-new.form.php" ?>
 
+    <h3 class="sin-header">all sins<span>(<?php echo count($data) ?>)</span></h3>
     <div class="sinsListArea">
-      <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
         <?php if (!empty($data)) : ?>
           <ul class="list-of-sins">
               <?php foreach ($data as $message): ?>
@@ -55,6 +55,7 @@ $data = load_data();
             .done(function () {
                 $("#sinCityModal").modal('hide');
                 $("div.sinsListArea").remove();
+                $("h3.sin-header span").text("(0)");
             })
             .fail(function (msg) {
             })
