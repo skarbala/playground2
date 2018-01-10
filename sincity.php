@@ -13,30 +13,31 @@ $data = load_data();
 <?php include 'partials/navigation.php' ?>
 
 <div class="container">
-    <h1 class="text-center">sin city</h1>
-    <div class="col-md-6">
-        <h3>new sin</h3>
-        <?php require_once "partials/sin-city/add-new.form.php" ?>
+  <h1 class="text-center">sin city</h1>
+  <div class="col-md-6">
+    <h3>new sin</h3>
+      <?php require_once "partials/sin-city/add-new.form.php" ?>
 
-
-    <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
-      <?php if (!empty($data)) : ?>
-        <ul class="list-of-sins">
-            <?php foreach ($data as $message): ?>
-              <li class="sin">
-                  <?php echo $message->title ?>
-                <div class="description">
-                  <p class="<?php echo ($message->forgiven) ? "" : "pending" ?>">
-                      <?php echo ($message->forgiven) ? "forgiven" : "pending" ?></p>
-                  <a data="<?php echo $message->id ?>" href="">detail</a>
-                </div>
-              </li>
-            <?php endforeach ?>
-        </ul>
-        <button class="btn btn-block" data-toggle="modal" data-target="#sinCityModal">
-          Erase them all
-        </button>
-      <?php endif ?>
+    <div class="sinsListArea">
+      <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
+        <?php if (!empty($data)) : ?>
+          <ul class="list-of-sins">
+              <?php foreach ($data as $message): ?>
+                <li class="sin">
+                    <?php echo $message->title ?>
+                  <div class="description">
+                    <p class="<?php echo ($message->forgiven) ? "" : "pending" ?>">
+                        <?php echo ($message->forgiven) ? "forgiven" : "pending" ?></p>
+                    <a data="<?php echo $message->id ?>" href="">detail</a>
+                  </div>
+                </li>
+              <?php endforeach ?>
+          </ul>
+          <button class="btn btn-block" data-toggle="modal" data-target="#sinCityModal">
+            Erase them all
+          </button>
+        <?php endif ?>
+    </div>
   </div>
     <?php include 'partials/sin-city/detail.php' ?>
   <img src="assets/img/sincity.jpg" alt="" class="sinbadge">
@@ -45,4 +46,20 @@ $data = load_data();
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/sin-city.js" type="text/javascript"></script>
+<script>
+    $('#confirm').click(function () {
+        $.ajax({
+            url: baseURL + 'erase-all-sins.php',
+            type: 'GET'
+        })
+            .done(function () {
+                $("#sinCityModal").modal('hide');
+                $("div.sinsListArea").remove();
+            })
+            .fail(function (msg) {
+            })
+            .always(function () {
+            });
+    });
+</script>
 </html>
