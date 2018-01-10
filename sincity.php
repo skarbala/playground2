@@ -18,27 +18,31 @@ $data = load_data();
         <h3>new sin</h3>
         <?php require_once "partials/sin-city/add-new.form.php" ?>
 
-        <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
-        <?php if (!empty($data)) : ?>
-            <ul class="list-of-sins">
-                <?php foreach ($data as $message): ?>
-                    <li class="sin">
-                        <?php echo $message->title ?>
-                        <div class="description">
-                            <p class="<?php echo ($message->forgiven) ? "" : "pending" ?>">
-                                <?php echo ($message->forgiven) ? "forgiven" : "pending" ?></p>
-                            <a data="<?php echo $message->id ?>" href="">detail</a>
-                        </div>
-                    </li>
-                <?php endforeach ?>
-            </ul>
-        <?php endif ?>
-    </div>
 
+    <h3>all sins<span>(<?php echo count($data) ?>)</span></h3>
+      <?php if (!empty($data)) : ?>
+        <ul class="list-of-sins">
+            <?php foreach ($data as $message): ?>
+              <li class="sin">
+                  <?php echo $message->title ?>
+                <div class="description">
+                  <p class="<?php echo ($message->forgiven) ? "" : "pending" ?>">
+                      <?php echo ($message->forgiven) ? "forgiven" : "pending" ?></p>
+                  <a data="<?php echo $message->id ?>" href="">detail</a>
+                </div>
+              </li>
+            <?php endforeach ?>
+        </ul>
+        <button class="btn btn-block" data-toggle="modal" data-target="#sinCityModal">
+          Erase them all
+        </button>
+      <?php endif ?>
+  </div>
     <?php include 'partials/sin-city/detail.php' ?>
-
-    <img src="assets/img/sincity.jpg" alt="" class="sinbadge">
+  <img src="assets/img/sincity.jpg" alt="" class="sinbadge">
+    <? include_once "partials/sin-city/modal.php" ?>
 </div>
 </body>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/sin-city.js" type="text/javascript"></script>
 </html>

@@ -49,15 +49,17 @@ li.sin:last-child {
 
 li.sin div.description {
     color: white;
-    float:right;
-    margin:0;
+    float: right;
+    margin: 0;
 }
-div.description p{
+
+div.description p {
     display: inline-block;
     margin: 0 20px;
 }
-div.description p.pending{
-    color:red;
+
+div.description p.pending {
+    color: red;
 }
 
 h1,
@@ -187,4 +189,26 @@ label.checkbox-inline {
 
 div.detail {
     position: relative;
+}
+
+div.modal-content {
+    background-color: #000000;
+    border-color: #590f00;
+}
+div.modal-content h3, div.modal-content button.btn{
+    font-size: 20px;
+}
+
+div.modal-content button.btn {
+    background-color: transparent;
+    color: #a51000;
+    font-weight: 600;
+    font-family: sincity, sans-serif;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    font-size: 16px;
+    border: none;
 }
