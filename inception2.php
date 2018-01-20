@@ -84,7 +84,8 @@
 <script>
 
     $("#letsGoDeeper").click(function () {
-        window.open("http://localhost/inception2.php", "", "width=1200,height=900");
+        var baseUrl = document.location.origin;
+        window.open(baseUrl+"/inception2.php", "", "width=1200,height=900");
     })
 </script>
 </html>
