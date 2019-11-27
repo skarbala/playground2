@@ -17,22 +17,22 @@ $data = load_data();
   <h2>hriechov hrmených</h2>
 </div>
 <div class="sins col-md-10 col-md-offset-1">
-    <? foreach ($data as $message): ?>
+    <?php foreach ($data as $message): ?>
         <?php if (!$message->forgiven): ?>
-        <article class="sin" id="<? echo $message->id ?>">
+        <article class="sin" id="<?php echo $message->id ?>">
           <header>
-            <h4><? echo $message->title ?><span><? echo $message->creation_date ?></span></h4>
+            <h4><?php echo $message->title ?><span><?php echo $message->creation_date ?></span></h4>
           </header>
-          <p><? echo $message->message ?></p>
+          <p><?php echo $message->message ?></p>
           <footer>
-            <h5><? echo $message->author ?></h5>
+            <h5><?php echo $message->author ?></h5>
             <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"
-                    data="<? echo $message->id ?>">forgive
+                    data="<?php echo $message->id ?>">forgive
             </button>
           </footer>
         </article>
-        <? endif; ?>
-    <? endforeach ?>
+        <?php endif; ?>
+    <?php endforeach ?>
 </div>
 <? include_once "partials/sparta/modal.php" ?>
 </body>
